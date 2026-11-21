@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | TechFest 2027</title>
+    <style>
+        body{
+            background-color: #fff4e0;
+            color: #1b1b2f;
+            text-align: center;
+            font-size: larger;
+        }
+        ul {
+        width: fit-content;
+        margin: 0 auto;
+        text-align: left;
+        }  
+        fieldset{
+            background-color: beige;
+            margin: 0 auto; 
+            border:2px solid  #1b1b2f;
+            border-radius: 12px;
+            width: 600px;
+        }
+        footer {
+        font-size: 15px;
+        } 
+        button {
+            background-color: #38bdf8;
+            color: #0f172a;
+            border:none;
+            border-radius: 6px;
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        header {
+        display: flex;
+        align-items: center;
+        }
+        #navbar {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        gap: 120px;
+        font-size: xx-large;
+        }
+        .link {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id= "logo" src="Techfest-logo.jpg" alt="TechFest logo" width="300" height="250">
+        <div id="navbar">
+        <a class="link" href="index.html">Home</a>
+        <a class="link" href="events.html">Events</a>
+        <a class="link" href="schedule.html">Schedule</a>
+        <a class="link" href="register.html">Register</a>
+        <a class="link" href="contact.html">Contact</a>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <h1>Register for TechFest 2027</h1>
+        <p>Fill in the form below. All fields except the questions box are required.</p>
+        <form>
+            <fieldset>
+                <legend><h2>Personal details</h2></legend>
+                <label>Full name : <input type="text" placeholder="Enter your full name "></label>
+                <br><br>
+                <label>Email address : <input type="email" placeholder="name@example.com"></label>
+                <br><br>
+                <label>Phone number : <input type="number" placeholder="10-digit mobile number"></label>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Academic details</h2></legend>
+                <label>Department : </label>
+                <select>
+                    <option value="">-- Select your department --</option>
+                    <option>Computer Science</option>
+                    <option>Information Technology</option>
+                    <option>Electronics</option>
+                    <option>Mechanical</option>
+                    <option>Management</option>
+                    <option>Other</option>
+                </select>
+                <h3>Year of study</h3>
+                <label><input type="radio" name="year">1st year</label>
+                <label><input type="radio" name="year">2nd year</label>
+                <label><input type="radio" name="year">3rd year</label>
+                <label><input type="radio" name="year">4th year</label>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Event preferences</h2></legend>
+                <p>Choose one or more events.</p>
+                <label><input type="checkbox">Code Sprint</label>
+                <br>
+                <label><input type="checkbox">HackVerse</label>
+                <br>
+                <label><input type="checkbox">Robo Race</label>
+                <br>
+                <label><input type="checkbox">AI Quiz Bowl</label>
+                <br>
+                <label><input type="checkbox">Pixel Arena</label>
+                <br>
+                <label><input type="checkbox">UI Showdown</label>
+                <br><br>
+                <label>Questions or special requirements : <textarea rows="4" placeholder="Team members, accessibility needs, anything else"></textarea></label>
+            </fieldset>
+            <br>
+            <button type="submit">Register now</button>
+            <button type="reset">Clear form</button>
+        </form>
+    </main>
+    <br>
+    <hr>
+    <footer>
+        <p>&copy;TechFest 2027, Quad AI school of Technology and Management, A fictional festival.</p>
+    </footer>
+</body>
+</html>
